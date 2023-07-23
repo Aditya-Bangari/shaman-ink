@@ -1,0 +1,73 @@
+ul{
+  list-style: none;
+}
+p{
+  margin-bottom: 0;
+}
+.link {
+  color: #323232;
+  line-height: 120%;
+  text-transform: uppercase;
+  letter-spacing: -.04em;
+  font-family: DM Sans,sans-serif;
+  font-size: .8vw;
+  font-weight: 500;
+}
+.firstscreen{
+  height: 100vh;
+  margin-bottom: 10vw;
+  padding: 1.5vw 3.5vw 1vw;
+  position: relative;
+}
+.title{
+  letter-spacing: -.04em;
+  text-transform: uppercase;
+  font-family: DM Sans,sans-serif;
+  font-size: 14.5vw;
+  font-weight: 700;
+  color: #323232;
+  line-height: 80%;
+
+  .shaman{
+    margin-left: -0.04em;
+    padding-bottom: 0;
+  }
+  .ink{
+    margin-left: -0.04em;
+    padding-bottom: 0;
+  }
+}
+.sub-text{
+  text-align: right;
+  letter-spacing: -.04em;
+  text-transform: uppercase;
+  font-family: DM Sans,sans-serif;
+  font-size: .8vw;
+  font-weight: 500;
+  line-height: 120%;
+}
+.smokeimg{
+  z-index: -1;
+  width: 30%;
+  opacity: 1;
+  filter: contrast(200%);
+  white-space: normal;
+  mix-blend-mode: color-burn;
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: -3.5vw;
+  right: auto;
+}
+.owl{
+  z-index: -1;
+  width: 30%;
+  opacity: 1;
+  filter: contrast(200%);
+  white-space: normal;
+  mix-blend-mode: darken;
+  position: absolute;
+  top: 12%;
+  bottom: auto;
+  right: -14.6vw;
+}
