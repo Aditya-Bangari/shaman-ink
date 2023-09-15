@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'locomotive-scroll/src/locomotive-scroll.scss'; // Import Locomotive Scroll CSS
+
 * {
   margin: 0;
   padding: 0;
@@ -11,5 +13,5 @@ html, body {
 }
 body {
   background-color: #F9F8F6 !important;
-  overflow: hidden;
+  overflow-x: hidden;
 }
