@@ -1,53 +1,86 @@
-ul{
+ul {
   list-style: none;
 }
-p{
+
+p {
   margin-bottom: 0;
 }
-.spacer12{
+
+.spacer12 {
   margin-top: 12.5rem;
 }
-.spacer2{
+
+.spacer2 {
   margin-top: 2.7vw;
 }
-.spacer3{
+
+.spacer3 {
   margin-top: 3.7vw;
 }
+
 .py-10rem {
   padding: 10rem 0;
 }
-.my-8{
+
+.my-8 {
   margin-top: 8vw;
   margin-bottom: 8svw;
 }
-.my-10{
+
+.my-10 {
   margin-top: 10vw;
   margin-bottom: 10vw;
 }
-.pb-10vw{
+
+.pb-10vw {
   padding-bottom: 10vw !important;
 }
-.bg-gray{
+
+.bg-gray {
   background-color: #F0EFED;
 }
+
 @font-face {
   font-family: 'scriptina';
   src: url(~src/assets/fonts/scriptina.regular.ttf) format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'madeBold';
   src: url(~src/assets/fonts/madeBold.otf) format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'madeOutlineBold';
   src: url(~src/assets/fonts/outlineBold.otf) format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+
+.preloader {
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0c0c0c;
+
+  .bg-gif {
+    background-image: url("../../assets/bg-images/shaman-intro-left-gif.gif");
+    background-size: cover; /* Cover the entire column with the background image */
+    background-position: center;
+    mix-blend-mode: lighten;
+  }
+
+  .logo-gif {
+    border-radius: 70%;
+  }
+}
+
 .link {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   //color: #323232;
@@ -55,7 +88,7 @@ p{
   line-height: 120%;
   text-transform: uppercase;
   letter-spacing: -.04em;
-  font-family: DM Sans,sans-serif;
+  font-family: DM Sans, sans-serif;
   font-size: .8vw;
   font-weight: 500;
 }
@@ -70,44 +103,48 @@ p{
 
 }
 
-.firstscreen{
+.firstscreen {
   height: 100vh;
   margin-bottom: 10vw;
   padding: 1.5vw 3.5vw 3vw;
   position: relative;
 }
-.title{
+
+.title {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   letter-spacing: -.04em;
   text-transform: uppercase;
-  font-family: madeBold,sans-serif;
+  font-family: madeBold, sans-serif;
   font-size: 12.5vw;
   font-weight: 700;
   //color: #323232;
   color: white;
   line-height: 80%;
 
-  .shaman{
+  .shaman {
     margin-left: -0.04em;
     padding-bottom: 0;
   }
-  .ink{
+
+  .ink {
     margin-left: -0.04em;
     padding-bottom: 0;
   }
 }
-.sub-text{
+
+.sub-text {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   color: white;
   text-align: right;
   letter-spacing: -.04em;
   text-transform: uppercase;
-  font-family: DM Sans,sans-serif;
+  font-family: DM Sans, sans-serif;
   font-size: .8vw;
   font-weight: 500;
   line-height: 120%;
 }
-.smokeimg{
+
+.smokeimg {
   //z-index: -1;
   width: 30%;
   opacity: 1;
@@ -120,7 +157,8 @@ p{
   left: -3.5vw;
   right: auto;
 }
-.owl{
+
+.owl {
   z-index: -1;
   width: 30%;
   opacity: 1;
@@ -132,11 +170,13 @@ p{
   bottom: auto;
   right: -14.6vw;
 }
-.separator-line{
+
+.separator-line {
   height: 1px;
-  background-color: rgba(50,50,50,.2);
+  background-color: rgba(50, 50, 50, .2);
 }
-.portfolio{
+
+.portfolio {
   padding: 3vw 3.5vw 0;
 
   .image1 {
@@ -144,20 +184,24 @@ p{
     z-index: 2;
     filter: grayscale(1);
     transition: filter 0.4s ease-in;
+
     &:hover {
       filter: grayscale(0);
     }
   }
+
   .image2 {
     height: 20.8vw;
     object-fit: cover;
     z-index: 2;
     filter: grayscale(1);
     transition: filter 0.4s ease-in;
+
     &:hover {
       filter: grayscale(0);
     }
   }
+
   .image-title-container {
     width: 100%;
     cursor: pointer;
@@ -168,40 +212,44 @@ p{
     align-items: center;
     padding: 0.8em;
     display: flex;
-    .image-title{
+
+    .image-title {
       letter-spacing: -.004em;
       text-transform: none;
-      font-family: DM Sans,sans-serif;
+      font-family: DM Sans, sans-serif;
       font-size: 1.1vw;
       font-weight: 400;
       line-height: 140%;
     }
   }
-  .portfolio-heading{
+
+  .portfolio-heading {
     text-transform: uppercase;
     letter-spacing: -.04em;
-    font-family: DM Sans,sans-serif;
+    font-family: DM Sans, sans-serif;
     font-size: 1vw;
     font-weight: 400;
     line-height: 120%;
   }
-  .background-text-container{
+
+  .background-text-container {
     position: relative;
 
-    .background-text{
+    .background-text {
       position: absolute;
       top: -50px;
       right: 0;
       z-index: -1;
       letter-spacing: -.04em;
       text-transform: uppercase;
-      font-family: DM Sans,sans-serif;
+      font-family: DM Sans, sans-serif;
       font-size: 12.8vw;
       font-weight: 700;
       color: #c9c7c5;
       line-height: 80%;
     }
-    .about-you{
+
+    .about-you {
       position: absolute;
       z-index: -1;
       right: 50px;
@@ -209,16 +257,17 @@ p{
   }
 
 
-  .flower-separator{
+  .flower-separator {
     transform: rotate(45deg);
     width: 61px;
     aspect-ratio: auto 61 / 77;
     height: 77px
   }
-  .text-separator{
+
+  .text-separator {
     letter-spacing: -.04em;
     text-transform: uppercase;
-    font-family: DM Sans,sans-serif;
+    font-family: DM Sans, sans-serif;
     font-size: 1.2vw;
     line-height: 105%;
     padding: 0 26%;
@@ -227,58 +276,59 @@ p{
   }
 
 }
+
 .about-me {
   padding: 3vw 3.5vw 0;
 
-  .about-me-heading{
+  .about-me-heading {
     text-transform: uppercase;
     letter-spacing: -.04em;
-    font-family: DM Sans,sans-serif;
+    font-family: DM Sans, sans-serif;
     font-size: 1vw;
     font-weight: 400;
     line-height: 120%;
   }
 
-  .artist-image{
+  .artist-image {
     height: 20vw;
     width: auto;
   }
 
-  .intro-1{
+  .intro-1 {
     font-family: "Ms Madi", cursive;
     //font-family: 'scriptina', sans-serif ;
     font-size: 4vw;
     line-height: 120%;
   }
 
-  .intro-2{
-    font-family: 'scriptina', sans-serif ;
+  .intro-2 {
+    font-family: 'scriptina', sans-serif;
     //font-family: "Ms Madi", cursive;
     font-size: 4vw;
     line-height: 120%;
-    color:	goldenrod;
+    color: goldenrod;
     margin-left: -20vw;
   }
 
-  .about-me-content{
+  .about-me-content {
     letter-spacing: -.004em;
     text-transform: none;
-    font-family: DM Sans,sans-serif;
+    font-family: DM Sans, sans-serif;
     font-size: 1.1vw;
     font-weight: 400;
     line-height: 140%
   }
 
-  .mt-4vw{
+  .mt-4vw {
     margin-top: 4vw;
   }
 }
 
 
-.my-approach{
+.my-approach {
   padding: 3vw 3.5vw 0;
 
-  .box-container{
+  .box-container {
     height: 46vw;
     background-color: #f0efed;
     display: flex;
@@ -293,7 +343,7 @@ p{
     }
   }
 
-  .video{
+  .video {
     width: 17.5926vw;
     height: 23vw;
     max-width: none;
@@ -302,40 +352,45 @@ p{
     position: relative;
     transition: filter 0.4s ease-in;
   }
-  .my-approach-heading{
+
+  .my-approach-heading {
     text-transform: uppercase;
     letter-spacing: -.04em;
-    font-family: DM Sans,sans-serif;
+    font-family: DM Sans, sans-serif;
     font-size: 1vw;
     font-weight: 400;
     line-height: 120%;
   }
-  .my-approach-sub-heading{
+
+  .my-approach-sub-heading {
     letter-spacing: -.04em;
     text-transform: uppercase;
-    font-family: DM Sans,sans-serif;
+    font-family: DM Sans, sans-serif;
     font-size: 1.2vw;
     line-height: 105%;
     color: #323232;
     font-weight: 600;
     margin-bottom: 1em;
   }
-  .pl-7vw{
+
+  .pl-7vw {
     padding-left: 7vw;
   }
-  .my-approach-content{
+
+  .my-approach-content {
     letter-spacing: -.004em;
     text-transform: none;
-    font-family: DM Sans,sans-serif;
+    font-family: DM Sans, sans-serif;
     font-size: 1.1vw;
     font-weight: 400;
     line-height: 140%;
     color: #323232;
   }
-  .my-approach-content-2{
+
+  .my-approach-content-2 {
     letter-spacing: -.004em;
     text-transform: none;
-    font-family: DM Sans,sans-serif;
+    font-family: DM Sans, sans-serif;
     font-size: 1.1vw;
     font-weight: 400;
     line-height: 140%;
@@ -343,7 +398,7 @@ p{
     width: 75%;
   }
 
-  .border-image{
+  .border-image {
     transform: rotateZ(180deg);
     //background-color: #F9F8F6;
     margin-top: -15px;
@@ -351,33 +406,270 @@ p{
     filter: drop-shadow(-5px 1px 3px #555) contrast(100%) saturate(1.3);
   }
 }
+
 .testimonial {
   padding: 3vw 3.5vw 0;
 
   .review-heading {
     text-transform: uppercase;
     letter-spacing: -.04em;
-    font-family: DM Sans,sans-serif;
+    font-family: DM Sans, sans-serif;
     font-size: 1vw;
     font-weight: 400;
     line-height: 120%;
   }
-  .testimonial-image{
+
+  .testimonial-image {
     width: 100%;
   }
 }
 
 .before-session {
-  padding: 3vw 3.5vw 0;
-  .before-session-heading{
+  padding: 3vw 3.5vw 3vw;
+  min-height: 60vw;
+
+  .before-session-heading {
     text-transform: uppercase;
     letter-spacing: -.04em;
-    font-family: DM Sans,sans-serif;
+    font-family: DM Sans, sans-serif;
     font-size: 1vw;
     font-weight: 400;
     line-height: 120%;
   }
-  .arrow-head {
+
+  .arrow-head-prev {
+    transform: rotateZ(360deg);
+  }
+
+  .arrow-head-next {
     transform: rotateZ(-180deg);
+  }
+
+  .before-session-card {
+    height: 100%;
+    min-height: 100%;
+    border: 1px solid rgba(50, 50, 50, .15);
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1vw !important;
+    display: block;
+  }
+
+  .title-col {
+    height: 15vw;
+  }
+
+  .before-session-card-title {
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: -.035em;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2.7vw;
+    line-height: 100%;
+    font-weight: 700;
+    color: #323232;
+  }
+
+  .before-session-card-content {
+    letter-spacing: -.004em;
+    text-transform: none;
+    font-family: DM Sans, sans-serif;
+    font-size: 1.1vw;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 0;
+  }
+
+  .before-session-img {
+    width: 10vw;
+  }
+}
+
+.vibe-together {
+  padding: 3vw 3.5vw 0;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+
+  .bg-flower {
+    /* width: 35%; */
+    max-width: 100%;
+    /* mix-blend-mode: color-burn; */
+    /* display: block; */
+    position: absolute;
+    /* top: 4%; */
+    right: -1%;
+  }
+
+  .vibe-video {
+    z-index: 99;
+    width: 30vw;
+    height: 20vw;
+    filter: grayscale(100%);
+    object-fit: cover;
+    object-position: 50% 100%;
+  }
+
+  .vibe-text {
+    color: #c9c7c5;
+    letter-spacing: -.04em;
+    text-transform: uppercase;
+    font-family: DM Sans, sans-serif;
+    font-size: 12.8vw;
+    font-weight: 700;
+    line-height: 80%;
+    position: relative;
+  }
+
+}
+
+.contact {
+  padding: 3vw 3.5vw 3vw;
+
+  .contact-heading {
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    font-family: DM Sans, sans-serif;
+    font-size: 1vw;
+    font-weight: 400;
+    line-height: 120%
+  }
+
+  .contact-content {
+    letter-spacing: -.04em;
+    text-transform: uppercase;
+    font-family: DM Sans, sans-serif;
+    font-size: 1.2vw;
+    line-height: 105%;
+    //width: 80%;
+    text-align: left;
+    margin-top: 3em;
+    color: #323232
+  }
+  .contact-title{
+    font-weight: 500;
+    letter-spacing: -.004em;
+    text-transform: none;
+    font-family: DM Sans,sans-serif;
+    font-size: 1.1vw;
+    margin-bottom: 1em;
+    line-height: 105%;
+  }
+  .contact-info{
+    letter-spacing: -.004em;
+    text-transform: none;
+    font-family: DM Sans,sans-serif;
+    font-size: 1.1vw;
+    font-weight: 400;
+    line-height: 140%;
+  }
+}
+.footer {
+  padding: 3vw 3.5vw 3vw;
+  position: relative;
+  height: 100vh;
+  .bg-flower{
+    position: absolute;
+    right: 0;
+    width: 25vw;
+    opacity: .9;
+    mix-blend-mode: color-burn;
+    bottom: auto;
+    left: auto;
+    transform: translate(2vw,-4vw)rotate(-120deg)
+  }
+  .footer-title{
+    margin-top: 0;
+    margin-bottom: 0.125em;
+    font-size: 1vw;
+    font-weight: 700;
+    line-height: 120%;
+    font-family: DM Sans,sans-serif;
+  }
+  .footer-info{
+    color: #323232;
+    font-size: 1vw;
+    font-weight: 400;
+    line-height: 120%;
+    font-family: DM Sans,sans-serif;
+  }
+  .footer-content{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: DM Sans,sans-serif;
+    font-size: 1.2vw;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -.035em;
+    margin-bottom: 1vw;
+    width: 22vw;
+  }
+  .send-request-button{
+    color: #b64b4b;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid rgba(182,75,75,.3);
+    border-radius: 1px;
+    //margin-top: 1.6em;
+    padding: 0.7em 1em;
+    font-size: .8vw;
+    font-weight: 500;
+    line-height: 100%;
+    transition: opacity .6s ease-in-out;
+    display: inline-block;
+  }
+  .shaman_ink-footer{
+    color: #323232;
+    letter-spacing: -.04em;
+    text-transform: uppercase;
+    font-family: DM Sans,sans-serif;
+    font-size: 12.8vw;
+    font-weight: 700;
+    line-height: 80%;
+  }
+}
+.future-plans{
+  .future-plans-container{
+    border-top: 1px solid rgba(50,50,50,.5);
+    border-bottom: 1px solid rgba(50,50,50,.5);
+    .future-plans-heading{
+      letter-spacing: -.04em;
+      text-transform: uppercase;
+      font-family: DM Sans,sans-serif;
+      font-size: .8vw;
+      font-weight: 400;
+      line-height: 120%;
+      text-align: center;
+      padding-top: 1.2em;
+      padding-bottom: 1.2em;
+    }
+  }
+  .future-plan1{
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -.035em;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2.7vw;
+    line-height: 100%;
+    color: #323232;
+    font-family: DM Sans,sans-serif;
+  }
+  .future-plan1-content{
+
+    text-decoration: none;
+    color: #b64b4b;
+    text-transform: uppercase;
+    font-size: .8vw;
+    line-height: 100%;
+  }
+  .aditya-b{
+    color: rgba(50,50,50,.5);
+    font-size: 1vw;
+    font-family: DM Sans,sans-serif;
+    padding: 0.2vw 3.5vw;
   }
 }
