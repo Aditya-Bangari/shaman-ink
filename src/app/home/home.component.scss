@@ -20,6 +20,9 @@ p {
 
 .py-10rem {
   padding: 10rem 0;
+  @media screen and (max-width: 991px) {
+    padding: 5rem 0;
+  }
 }
 
 .my-8 {
@@ -38,6 +41,11 @@ p {
 
 .bg-gray {
   background-color: #F0EFED;
+}
+.m-h-60 {
+  @media screen and (max-width: 991px) {
+    height: 60vw;
+  }
 }
 
 @font-face {
@@ -196,6 +204,9 @@ p {
     z-index: 2;
     filter: grayscale(1);
     transition: filter 0.4s ease-in;
+    @media screen and (max-width: 991px) {
+      height: 42vw;
+    }
 
     &:hover {
       filter: grayscale(0);
@@ -220,6 +231,12 @@ p {
       font-size: 1.1vw;
       font-weight: 400;
       line-height: 140%;
+      @media screen and (max-width: 991px) {
+        font-size: 1.8vw;
+      }
+      @media screen and (max-width: 767px) {
+        font-size: 2.1vw;
+      }
     }
   }
 
@@ -230,6 +247,12 @@ p {
     font-size: 1vw;
     font-weight: 400;
     line-height: 120%;
+    @media screen and (max-width: 991px) {
+      font-size: 1.4vw;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 1.7vw;
+    }
   }
 
   .background-text-container {
@@ -247,12 +270,22 @@ p {
       font-weight: 700;
       color: #c9c7c5;
       line-height: 80%;
+      @media screen and (max-width: 991px) {
+        top: 0;
+        left: 0;
+      }
     }
 
     .about-you {
       position: absolute;
       z-index: -1;
       right: 50px;
+
+      @media screen and (max-width: 991px) {
+        top: 1em;
+        right: 50px;
+        width: 40% !important;
+      }
     }
   }
 
@@ -272,6 +305,10 @@ p {
     line-height: 105%;
     padding: 0 26%;
     font-weight: 400;
+    @media screen and (max-width: 991px) {
+      font-size: 1.5vw;
+      font-weight: 500;
+    }
 
   }
 
@@ -287,11 +324,22 @@ p {
     font-size: 1vw;
     font-weight: 400;
     line-height: 120%;
+
+    @media screen and (max-width: 991px) {
+      font-size: 1.4vw;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 1.7vw;
+    }
   }
 
   .artist-image {
     height: 20vw;
     width: auto;
+    border-radius: 8px;
+    @media screen and (max-width: 991px) {
+      height: 35vw;
+    }
   }
 
   .intro-1 {
@@ -299,6 +347,9 @@ p {
     //font-family: 'scriptina', sans-serif ;
     font-size: 4vw;
     line-height: 120%;
+    @media screen and (max-width: 991px) {
+      font-size: 5vw;
+    }
   }
 
   .intro-2 {
@@ -316,7 +367,14 @@ p {
     font-family: DM Sans, sans-serif;
     font-size: 1.1vw;
     font-weight: 400;
-    line-height: 140%
+    line-height: 140%;
+    @media screen and (max-width: 768px) {
+      margin-top: 2vw;
+      margin-bottom: 2vw;
+    }
+    @media screen and (max-width: 991px) {
+      font-size: 1.8vw;
+    }
   }
 
   .mt-4vw {
@@ -351,6 +409,10 @@ p {
     display: block !important;
     position: relative;
     transition: filter 0.4s ease-in;
+
+    @media screen and (max-width: 991px) {
+      height: 35vw;
+    }
   }
 
   .my-approach-heading {
@@ -360,6 +422,12 @@ p {
     font-size: 1vw;
     font-weight: 400;
     line-height: 120%;
+    @media screen and (max-width: 991px) {
+      font-size: 1.4vw;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 1.7vw;
+    }
   }
 
   .my-approach-sub-heading {
@@ -371,6 +439,10 @@ p {
     color: #323232;
     font-weight: 600;
     margin-bottom: 1em;
+
+    @media screen and (max-width: 991px) {
+      font-size: 1.68vw;
+    }
   }
 
   .pl-7vw {
@@ -385,6 +457,9 @@ p {
     font-weight: 400;
     line-height: 140%;
     color: #323232;
+    @media screen and (max-width: 991px) {
+      font-size: 1.5vw;
+    }
   }
 
   .my-approach-content-2 {
@@ -396,6 +471,10 @@ p {
     line-height: 140%;
     color: #323232;
     width: 75%;
+
+    @media screen and (max-width: 991px) {
+      font-size: 1.5vw;
+    }
   }
 
   .border-image {
@@ -404,6 +483,7 @@ p {
     margin-top: -15px;
     width: 30vw;
     filter: drop-shadow(-5px 1px 3px #555) contrast(100%) saturate(1.3);
+
   }
 }
 
@@ -417,6 +497,12 @@ p {
     font-size: 1vw;
     font-weight: 400;
     line-height: 120%;
+    @media screen and (max-width: 991px) {
+      font-size: 1.4vw;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 1.7vw;
+    }
   }
 
   .testimonial-image {
@@ -435,6 +521,12 @@ p {
     font-size: 1vw;
     font-weight: 400;
     line-height: 120%;
+    @media screen and (max-width: 991px) {
+      font-size: 1.4vw;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 1.7vw;
+    }
   }
 
   .arrow-head-prev {
@@ -523,7 +615,12 @@ p {
   }
 
 }
-
+.w-lg-75{
+  width: 75%;
+  @media screen and (max-width: 991px) {
+    width: 100%;
+  }
+}
 .contact {
   padding: 3vw 3.5vw 3vw;
 
@@ -533,7 +630,13 @@ p {
     font-family: DM Sans, sans-serif;
     font-size: 1vw;
     font-weight: 400;
-    line-height: 120%
+    line-height: 120%;
+    @media screen and (max-width: 991px) {
+      font-size: 1.4vw;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 1.7vw;
+    }
   }
 
   .contact-content {
@@ -545,31 +648,65 @@ p {
     //width: 80%;
     text-align: left;
     margin-top: 3em;
-    color: #323232
+    color: #323232;
+    @media screen and (max-width: 991px){
+      width: 80%;
+      letter-spacing: -.02em;
+      font-size: 1.8vw;
+      font-weight: 500;
+      line-height: 115%;
+    }
   }
-  .contact-title{
+
+  .contact-title {
     font-weight: 500;
     letter-spacing: -.004em;
     text-transform: none;
-    font-family: DM Sans,sans-serif;
+    font-family: DM Sans, sans-serif;
     font-size: 1.1vw;
     margin-bottom: 1em;
     line-height: 105%;
+
+    @media screen and (max-width: 991px) {
+      font-size: 1.8vw;
+    }
+    @media screen and (max-width: 767px){
+      font-size: 2.1vw;
+    }
   }
-  .contact-info{
+
+  .contact-info {
     letter-spacing: -.004em;
     text-transform: none;
-    font-family: DM Sans,sans-serif;
+    font-family: DM Sans, sans-serif;
     font-size: 1.1vw;
     font-weight: 400;
     line-height: 140%;
+    @media screen and (max-width: 991px) {
+      font-size: 1.8vw;
+    }
+    @media screen and (max-width: 767px){
+      font-size: 2.1vw;
+    }
+
+    .my_insta_tag{
+      text-decoration: none;
+      color: #b64b4b;
+    }
   }
 }
+
 .footer {
   padding: 3vw 3.5vw 3vw;
   position: relative;
   height: 100vh;
-  .bg-flower{
+  .shaman_logo{
+    @media screen and (max-width: 991px) {
+      height: 20vw;
+      width: auto;
+    }
+  }
+  .bg-flower {
     position: absolute;
     right: 0;
     width: 25vw;
@@ -577,40 +714,62 @@ p {
     mix-blend-mode: color-burn;
     bottom: auto;
     left: auto;
-    transform: translate(2vw,-4vw)rotate(-120deg)
+    transform: translate(2vw, -4vw) rotate(-120deg)
   }
-  .footer-title{
+
+  .footer-title {
     margin-top: 0;
     margin-bottom: 0.125em;
     font-size: 1vw;
     font-weight: 700;
     line-height: 120%;
-    font-family: DM Sans,sans-serif;
+    font-family: DM Sans, sans-serif;
+    @media screen and (max-width: 991px) {
+      font-size: 1.8vw;
+    }
+    @media screen and (max-width: 479px) {
+      margin-bottom: 0.25em;
+      font-size: 4.1vw;
+    }
   }
-  .footer-info{
+
+  .footer-info {
     color: #323232;
     font-size: 1vw;
     font-weight: 400;
     line-height: 120%;
-    font-family: DM Sans,sans-serif;
+    font-family: DM Sans, sans-serif;
+    @media screen and (max-width: 991px){
+      font-size: 1.8vw;
+    }
   }
-  .footer-content{
+
+  .footer-content {
     text-align: center;
     text-transform: uppercase;
-    font-family: DM Sans,sans-serif;
+    font-family: DM Sans, sans-serif;
     font-size: 1.2vw;
     font-weight: 400;
     line-height: 120%;
     letter-spacing: -.035em;
     margin-bottom: 1vw;
     width: 22vw;
+    @media screen and (max-width: 991px) {
+      font-size: 2.15827vw;
+      width: 40vw;
+    }
+    @media screen and (max-width: 767px) {
+      letter-spacing: -.03em;
+      font-size: 1.9vw;
+    }
   }
-  .send-request-button{
+
+  .send-request-button {
     color: #b64b4b;
     text-align: center;
     text-transform: uppercase;
     background-color: transparent;
-    border: 1px solid rgba(182,75,75,.3);
+    border: 1px solid rgba(182, 75, 75, .3);
     border-radius: 1px;
     //margin-top: 1.6em;
     padding: 0.7em 1em;
@@ -619,34 +778,55 @@ p {
     line-height: 100%;
     transition: opacity .6s ease-in-out;
     display: inline-block;
+    @media screen and (max-width: 991px) {
+      font-size: 1.5vw;
+    }
   }
-  .shaman_ink-footer{
+
+  .shaman_ink-footer {
     color: #323232;
     letter-spacing: -.04em;
     text-transform: uppercase;
-    font-family: DM Sans,sans-serif;
+    font-family: DM Sans, sans-serif;
     font-size: 12.8vw;
     font-weight: 700;
     line-height: 80%;
+    @media screen and (max-width: 991px) {
+      font-size: 11.6vw;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 11.6vw;
+    }
+
   }
 }
-.future-plans{
-  .future-plans-container{
-    border-top: 1px solid rgba(50,50,50,.5);
-    border-bottom: 1px solid rgba(50,50,50,.5);
-    .future-plans-heading{
+
+.future-plans {
+  .future-plans-container {
+    border-top: 1px solid rgba(50, 50, 50, .5);
+    border-bottom: 1px solid rgba(50, 50, 50, .5);
+
+    .future-plans-heading {
       letter-spacing: -.04em;
       text-transform: uppercase;
-      font-family: DM Sans,sans-serif;
+      font-family: DM Sans, sans-serif;
       font-size: .8vw;
       font-weight: 400;
       line-height: 120%;
       text-align: center;
       padding-top: 1.2em;
       padding-bottom: 1.2em;
+
+      @media screen and (max-width: 991px){
+        font-size: 1.4vw;
+      }
+      @media screen and (max-width: 479px) {
+        font-size: 2.5vw;
+      }
     }
   }
-  .future-plan1{
+
+  .future-plan1 {
     font-weight: 700;
     text-align: center;
     letter-spacing: -.035em;
@@ -656,20 +836,32 @@ p {
     font-size: 2.7vw;
     line-height: 100%;
     color: #323232;
-    font-family: DM Sans,sans-serif;
+    font-family: DM Sans, sans-serif;
+    @media screen and (max-width: 991px) {
+      font-size: 5vw;
+      line-height: 95%;
+    }
   }
-  .future-plan1-content{
+
+  .future-plan1-content {
 
     text-decoration: none;
     color: #b64b4b;
     text-transform: uppercase;
     font-size: .8vw;
     line-height: 100%;
+    @media screen and (max-width: 991px) {
+      font-size: 1.5vw;
+    }
   }
-  .aditya-b{
-    color: rgba(50,50,50,.5);
+
+  .aditya-b {
+    color: rgba(50, 50, 50, .5);
     font-size: 1vw;
-    font-family: DM Sans,sans-serif;
+    font-family: DM Sans, sans-serif;
     padding: 0.2vw 3.5vw;
+    @media screen and (max-width: 991px) {
+      font-size: 1.6vw;
+    }
   }
 }
